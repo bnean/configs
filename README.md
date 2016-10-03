@@ -1,2 +1,2 @@
 # configs
-Config files for Urxvt, HyperTerm, Fish and i3.
+Config files for Urxvt, HyperTerm, Fish, vim and i3.
