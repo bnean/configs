@@ -67,6 +67,15 @@ URxvt*background:                     black
 URxvt*foreground:                     grey
 URxvt*saveLines:                      5000
 URxvt*cursorUnderline:                true
+
+! Activate tabs
+! URxvt.perl-ext-common: ...,default,tabbedex,...
+! URxvt.tabbed.tabbar-fg: 6
+! URxvt.tabbed.tabbar-bg: 0
+! URxvt.tabbed.tab-fg:    1
+! URxvt.tabbed.tab-bg:    0
+! URxvt.tabbed.title: no
+
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:                  true
 ! URxvt*transparent:                    true
