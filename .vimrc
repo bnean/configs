@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+set shell=/bin/bash
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -30,6 +30,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'tomtom/tcomment_vim'
+Plugin 'easymotion/vim-easymotion'
 "Plugin 'valloric/youcompleteme'
 "Plugin 'easymotion/vim-easymotion'
 
@@ -68,3 +69,4 @@ set statusline+=%*
 " let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+map <Leader> <Plug>(easymotion-prefix)
