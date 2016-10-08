@@ -69,4 +69,5 @@ set statusline+=%*
 " let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-map <Leader> <Plug>(easymotion-prefix)
+" map <Leader> <Plug>(easymotion-prefix)
+map <Leader> <Plug>(easymotion-bd-w)
