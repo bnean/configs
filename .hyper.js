@@ -22,7 +22,7 @@ module.exports = {
     borderColor: '#000',
 
     // custom css to embed in the main window
-    css: ``,
+    css: '',
 
     // custom css to embed in the terminal window
     termCSS: '',
@@ -69,9 +69,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-    plugins: ['hypertile'
-        // ,"hyperline"
-    ],
+  plugins: ['hypertile'
+            ,'hyperterm-hidemenu'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
