@@ -69,5 +69,7 @@ set statusline+=%*
 " let g:syntastic_loc_list_height = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_flake8_args = "--ignore E501"
+let g:syntatsic_python_checker=['flake8']
 " map <Leader> <Plug>(easymotion-prefix)
 map <Leader> <Plug>(easymotion-bd-w)
