@@ -70,7 +70,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: ['hypertile'
-            ,'hyperterm-hidemenu'
+            // ,'hyperterm-hidemenu'
   ],
 
   // in development, you can create a directory under

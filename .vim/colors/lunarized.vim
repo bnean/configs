@@ -112,4 +112,4 @@ hi GitGutterChange guifg=#bbbb00 guibg=#1a1a1a ctermfg=3 ctermbg=NONE
 hi GitGutterDelete guifg=#ff2222 guibg=#1a1a1a ctermfg=1 ctermbg=NONE
 hi GitGutterChangeDelete guifg=#bbbb00 guibg=#1a1a1a ctermfg=3 ctermbg=NONE
 "bar styling
-hi vertsplit ctermfg=0 ctermbg=NONE
+hi vertsplit ctermfg=239 ctermbg=NONE

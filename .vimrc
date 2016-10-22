@@ -27,10 +27,11 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'itchyny/lightline.vim'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'w0rp/ale'
 "Plugin 'valloric/youcompleteme'
 "Plugin 'easymotion/vim-easymotion'
 
@@ -61,15 +62,37 @@ set modifiable
 set noshowmode
 
 "syntastic config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_loc_list_height = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_flake8_args = "--ignore E501"
-let g:syntatsic_python_checker=['flake8']
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_python_flake8_args = "--ignore E501"
+" let g:syntatsic_python_checker=['flake8']
 " map <Leader> <Plug>(easymotion-prefix)
+"
 map <Leader> <Plug>(easymotion-bd-w)
+
+" bar styling
+set fillchars+=vert:\|
+
+"show commands as typed
+set showcmd
+
+nmap <Space> :
+
+let g:ale_statusline_format = ['E %d', 'W %d', 'OK']
+set statusline+=%{ALEGetStatusline()}
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+" let g:ale_linters = {
+"             \   'python': ['flake8 --ignore E501'],
+"             \}
+let g:ale_python_flake8_executable = '/usr/bin/flake8 --ignore E501'
+
+"Fuzzy file finder
+set path+=**
+set wildmenu
